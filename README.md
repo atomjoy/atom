@@ -69,3 +69,4 @@ taxonomy-brands.php – szablon elementów należących do niestandardowej takso
 ## Obrazki
 
 <img src="https://raw.githubusercontent.com/atomjoy/atom/refs/heads/main/blog-front.png" width="100%">
+<img src="https://raw.githubusercontent.com/atomjoy/atom/refs/heads/main/blog-single-post.png" width="100%">
