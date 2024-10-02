@@ -38,7 +38,8 @@ define('WP_DEBUG', true);
 
 ## Koszt szablonu
 
-Cena: 50 EUR do zastosowań komercyjnych pod strony www (za każdą stronę internetową).
+- Cena: 250 PLN + VAT
+- Do zastosowań komercyjnych pod strony www (za każdą stronę internetową).
 
 ## Opis plików szablonu Wordpress
 
