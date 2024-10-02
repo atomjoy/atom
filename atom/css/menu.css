@@ -1,0 +1,19 @@
+ul#menu-secondary-menu {
+    text-align: right;
+    padding: 10px 30px;
+}
+ul#menu-secondary-menu li {
+    list-style: none;
+    display: inline-block;
+    padding: 1px;
+}
+ul#menu-secondary-menu li:hover {
+    border: 1px solid #c00202;
+    padding: 0;
+    border-radius: 3px;
+}
+ul#menu-secondary-menu li a {
+    text-decoration: none;
+    padding: 5px;
+    font-size: 14px;
+}
