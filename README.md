@@ -65,3 +65,7 @@ taxonomy-cars.php – szablon elementów należących do niestandardowej taksono
 taxonomy-brands.php – szablon elementów należących do niestandardowej taksonomii (kategorii np. cars).
 404.php  – szablon strony błęd 404 w WordPress.
 ```
+
+## Obrazki
+
+<img src="https://raw.githubusercontent.com/atomjoy/atom/refs/heads/main/blog-front.png" width="100%">
