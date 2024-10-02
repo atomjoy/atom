@@ -32,7 +32,7 @@ function change_title($title) {
 		echo ' | ';
 		bloginfo('name');
 	} else if (is_tag()) {
-		echo '#';
+		echo 'Tag #';
 		single_tag_title();
 		echo ' | ';
 		bloginfo('name');

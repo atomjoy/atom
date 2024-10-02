@@ -141,7 +141,7 @@ a {
 	float: right;
 	width: auto;
 	height: auto;
-	padding: 10px;
+	padding: 15px;
 }
 
 .top-nav {
@@ -184,7 +184,7 @@ a {
 	text-transform: uppercase;
 	font-weight: 600;
 	text-wrap: nowrap;
-	padding: 13px 25px;
+	padding: 13px 5px;
 	margin: 5px;
 	color: var(--color-text-primary);
 	border-radius: 50px;
@@ -1763,6 +1763,38 @@ footer {
 	border-radius: var(--wp-radius-btn);
 }
 
+.error404-title {
+	float: left;
+	width: 100%;
+	margin-top: 100px;
+	text-align: center;
+	font-weight: 700;
+}
+
+.error404-nr {
+	float: left;
+	width: 100%;
+	font-size: 100px;
+	text-align: center;
+	font-weight: 900;
+	color: #f20;
+}
+
+.error404-text {
+	float: left;
+	width: 100%;
+	margin-bottom: 200px;
+	text-align: center;
+	font-weight: 500;
+}
+
+@supports (-webkit-text-stroke: 3px #f20) {
+	.error404-nr {
+		-webkit-text-fill-color: white;
+		-webkit-text-stroke: 3px #f20;
+	}
+}
+
 @media all and (max-width: 1100px) {
 	.flex-container .atom-rightbar,
 	.flex-container .atom-rightbar {
@@ -1788,6 +1820,7 @@ footer {
 	}
 	.top-logo {
 		text-align: start;
+		margin-left: 20px;
 	}
 	.top-menu {
 		padding: 10px 10px;
