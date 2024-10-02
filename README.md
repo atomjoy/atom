@@ -1,6 +1,6 @@
 # Atom Blog - Szablon Wordpress
 
-Minimalistyczny responsywny szablon Wordpress :) bez bloków do dalszej rozbudowy z formularzem kontaktowym, formularzem newslettera, stroną autora, wyszukiwaniem.
+Minimalistyczny responsywny szablon Wordpress bez bloków do dalszej rozbudowy z formularzem kontaktowym, formularzem newslettera, stroną autora, wyszukiwaniem.
 
 ## Konfiguracja wp-config.php
 
@@ -12,11 +12,11 @@ define('SMTP_username', 'twoj-email@gmail.com');    // wpisz swój adres e-mail 
 define('SMTP_password', 'twoje-haslo');             // tu podaje swoje hasło
 define('SMTP_server', 'smtp.gmail.com');            // tu podaj swój host serwera poczty
 define('SMTP_FROM', 'twoj-email@gmail.com');        // wpisz swój adres e-mail dla WordPress
-define('SMTP_NAME', 'Biuro');                 // tu podaj np. swoje imie
-define('SMTP_PORT', '587');                   // tu podaj numer portu np. 465 dla SSL lun 587 dla tls
-define('SMTP_SECURE', 'tls');                 // Szyfrowanie SSL lub TLS
-define('SMTP_AUTH', true);                    // Uwierzytelnienie (true|false)
-define('SMTP_DEBUG',0);                       // dla debugowania błędów 0/1/2
+define('SMTP_NAME', 'Biuro');                       // tu podaj np. swoje imie
+define('SMTP_PORT', '587');                         // tu podaj numer portu np. 465 dla SSL lun 587 dla tls
+define('SMTP_SECURE', 'tls');                       // Szyfrowanie SSL lub TLS
+define('SMTP_AUTH', true);                          // Uwierzytelnienie (true|false)
+define('SMTP_DEBUG',0);                             // dla debugowania błędów 0/1/2
 
 // Social media url
 define('SOCIAL_X', 'https://x.com/username');
@@ -34,6 +34,15 @@ define('DB_COLLATE', '');
 
 // Wyświetlaj błędy
 define('WP_DEBUG', true);
+```
+
+## Włącz boczny panel w functions.php
+
+```php
+<?php
+
+// Pokaż boczny panel w pojedyńczym poście
+$show_single_sidebar = true;
 ```
 
 ## Koszt szablonu
@@ -71,3 +80,4 @@ taxonomy-brands.php – szablon elementów należących do niestandardowej takso
 
 <img src="https://raw.githubusercontent.com/atomjoy/atom/refs/heads/main/blog-front.png" width="100%">
 <img src="https://raw.githubusercontent.com/atomjoy/atom/refs/heads/main/blog-single-post.png" width="100%">
+<img src="https://raw.githubusercontent.com/atomjoy/atom/refs/heads/main/blog-single-post-sidebar.png" width="100%">
