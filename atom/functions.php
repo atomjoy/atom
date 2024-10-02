@@ -1,5 +1,9 @@
 <?php
 
+// Show single post sidebar
+$show_single_sidebar = true;
+$show_single_sidebar = false;
+
 // Functions
 require(__DIR__ . '/functions/sidebars.php');
 require(__DIR__ . '/functions/views-counter.php');
@@ -23,6 +27,10 @@ function load_css() {
 	// Load template css
 	wp_register_style('main', get_template_directory_uri() . '/css/main.css', [], false, 'all');
 	wp_enqueue_style('main');
+
+	// Load code highlighter
+	wp_register_style('code', get_template_directory_uri() . '/css/highlighter.css', [], false, 'all');
+	wp_enqueue_style('code');
 }
 
 add_action('wp_enqueue_scripts', 'load_css');
@@ -36,6 +44,9 @@ function load_js() {
 	// Main.js
 	wp_register_script('main', get_template_directory_uri() . '/js/main.js', [], false);
 	wp_enqueue_script('main');
+
+	wp_register_script('code', get_template_directory_uri() . '/js/highlighter.js', [], false);
+	wp_enqueue_script('code');
 
 	// Load bootstrap and jquery
 	// wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap/bootstrap.min.js', ['jquery'], false);
@@ -68,7 +79,7 @@ add_image_size('medium_large', 768, 480, true);
 // Add thumbnail custom sizes crop array( 'center', 'center')
 add_image_size('post-thumbnail-large', 1280, 720, true);
 add_image_size('post-thumbnail-medium', 640, 360, true);
-add_image_size('post-thumbnail-small', 360, 200, true);
+add_image_size('post-thumbnail-small', 360, 208, true);
 
 // Remove thumbnails
 function remove_extra_image_sizes() {
@@ -114,7 +125,6 @@ function my_phpmailer_smtp($phpmailer) {
 	// $phpmailer->SetFrom(get_option('admin_email'), 'Administrator');
 }
 add_action('phpmailer_init', 'my_phpmailer_smtp');
-
 
 // Send email
 function subscribeUser($email) {

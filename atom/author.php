@@ -1,11 +1,10 @@
-<!-- Author Page -->
+<?php
+get_header();
 
-<?php get_header(); ?>
+get_template_part('include/body', 'header');
 
-<div class="page-wrap">
-    <div class="container">        
-        <?php get_template_part('include/section', 'author'); ?>
-    </div>
-</div>
+get_template_part('include/body', 'main-author');
 
-<?php get_footer(); ?>
+get_template_part('include/body', 'footer');
+
+get_footer();

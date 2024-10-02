@@ -1,11 +1,10 @@
-<!-- Archive Page -->
+<?php
+get_header();
 
-<?php get_header(); ?>
+get_template_part('include/body', 'header');
 
-<div class="page-wrap">
-	<div class="container">
-		<?php get_template_part('include/section', 'archive'); ?>
-	</div>
-</div>
+get_template_part('include/body', 'main-archive');
 
-<?php get_footer(); ?>
+get_template_part('include/body', 'footer');
+
+get_footer();

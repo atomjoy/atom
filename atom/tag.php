@@ -1,11 +1,10 @@
-<!-- Category Page -->
-<?php get_header(); ?>
+<?php
+get_header();
 
-<div class="page-wrap">
-    <div class="container">        
-        <?php get_template_part('include/section', 'tag'); ?>
-        
-    </div>
-</div>
+get_template_part('include/body', 'header');
 
-<?php get_footer(); ?>
+get_template_part('include/body', 'main-tag');
+
+get_template_part('include/body', 'footer');
+
+get_footer();

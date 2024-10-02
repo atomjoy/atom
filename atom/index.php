@@ -1,1 +1,1 @@
-Index page
+INDEX PAGE
