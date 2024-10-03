@@ -10,7 +10,7 @@
 add_filter('wp_title', 'change_title', 100);
 
 // Add wp_title() in header.php
-function change_title($title) {
+function change_title($title = '') {
 	global $post;
 
 	if (is_home()) {

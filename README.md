@@ -33,7 +33,7 @@ define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
 // Wyświetlaj błędy
-define('WP_DEBUG', true);
+define('WP_DEBUG', false); // true or false
 ```
 
 ## Włącz boczny panel w functions.php
@@ -45,6 +45,26 @@ define('WP_DEBUG', true);
 $show_single_sidebar = true;
 ```
 
+## Zmiana strony głównej
+
+Stronę domową można zmienić na dwa sposoby.
+
+### W panelu admina
+
+Ustaw w panelu statyczną stronę główną (Ustawienia > Czytanie).
+
+### Zmiana plików szablonu
+
+Skopiuj **front-page-disabled.php** do **font-page.php** szablonu i dodaj odpowiednie treści.
+
+```sh
+# Linux
+cp front-page-disabled.php front-page.php
+
+# Win
+copy front-page-disabled.php front-page.php
+```
+
 ## Koszt szablonu
 
 - Cena: 250 PLN + VAT
@@ -54,8 +74,8 @@ $show_single_sidebar = true;
 
 ```sh
 index.php – główny szablon i plik strony wymagany do poprawnego działania witryny.
-front-page.php – szablon statycznej strony głównej w WordPress (nadpisuje index.php, home.php).
 home.php – domyślny szablon WordPress prezentujący ostatnie wpisy na stronie głównej (nadpisuje index.php).
+front-page.php – szablon statycznej strony głównej w WordPress (nadpisuje index.php, home.php).
 single.php – szablon pojedynczego wpisu w WordPress.
 single-{post_type}.php – szablon pojedynczego wpisu w WordPress w niestandardowej taksonomii.
 page.php – szablon pojedynczej podstrony w WordPress (nadpisuje index.php).

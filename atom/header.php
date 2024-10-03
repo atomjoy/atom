@@ -4,7 +4,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title><?php wp_title(); ?></title>
+	<?php
+	// Error with static page
+	// echo '<title>' . wp_title() . '</title>';
+	?>
+	<title><?php change_title(); ?></title>
 	<meta name="description" content="<?php echo bloginfo('description'); ?>">
 
 	<!-- Favicon -->
