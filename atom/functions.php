@@ -11,7 +11,7 @@ require(__DIR__ . '/functions/share-social.php');
 require(__DIR__ . '/functions/subscribe-email.php');
 require(__DIR__ . '/functions/contact-form.php');
 require(__DIR__ . '/functions/change-title.php');
-require(__DIR__ . '/functions/cars-custom-post-type.php');
+// require(__DIR__ . '/functions/cars-custom-post-type.php');
 // require(__DIR__ . '/functions/post-page-custom-fields.php');
 
 // Disable auto updates
