@@ -1,10 +1,10 @@
 <?php
 
 // Title
-// add_theme_support('title-tag');
+add_theme_support('title-tag');
 
 // Remove
-// remove_action('wp_head', '_wp_render_title_tag', 1);
+remove_action('wp_head', '_wp_render_title_tag', 1);
 
 // Overwrite title
 add_filter('wp_title', 'change_title', 100);

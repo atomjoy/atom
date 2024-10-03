@@ -2,7 +2,7 @@
 
 /**
  * Template Name: Front Page
- * Template Post Type: post
+ * Template Post Type: post, page
  *
  * @package WordPress
  * @subpackage Atom Blog

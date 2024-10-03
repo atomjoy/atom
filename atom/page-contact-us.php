@@ -1,4 +1,4 @@
-<!-- About Us Page -->
+<!-- Contact Us -->
 <?php
 get_header();
 
