@@ -65,11 +65,6 @@ cp front-page-disabled.php front-page.php
 copy front-page-disabled.php front-page.php
 ```
 
-## Koszt szablonu
-
-- Cena: 250 PLN + VAT
-- Do zastosowań komercyjnych pod strony www (za każdą stronę internetową).
-
 ## Opis plików szablonu Wordpress
 
 ```sh
